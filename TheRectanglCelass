@@ -1,0 +1,38 @@
+import java.util.*;
+ class Rectangle {
+    
+    private double width; 
+    private double height; 
+    
+
+public Rectangle(){
+    width = 1;
+    height  =1;
+}
+public Rectangle(double width ,double height){
+    this.width= width;
+     this.height= height;
+}
+public double getArea(){
+   double area = width*height;
+   return area;
+}
+public double  getPerimeter(){
+ double Perimeter= 2*(width+height);
+ return Perimeter;
+    
+}
+
+}
+
+public class Exercise09_01{
+    public static void main (String [] args) {
+Rectangle one = new Rectangle(4,40);
+Rectangle two = new Rectangle(3.5,35.9);
+System.out.println("The area of a rectangle with width 4.0 and height 40.0 is" +one.getArea());
+System.out.println("The perimeter of a rectangle is " +one.getPerimeter());
+System.out.println("The area of a rectangle with width 3.5  and height 35.9 is " +two.getArea());
+System.out.println("The perimeter of a rectangle is " +two.getPerimeter());
+
+}
+}
